@@ -1,3 +1,11 @@
+-- =============================================
+-- Author:		Ali Sadeghi Aghili
+-- Create date: 2023/11/26
+-- Description: If you want to give the new user all the same permissions as the existing user, 
+--              including server-level and database-level permissions, you can use dynamic SQL 
+--              to generate and execute the necessary commands
+-- =============================================
+
 DECLARE @sourceUser NVARCHAR(100) = 'source_user';
 DECLARE @newUser NVARCHAR(100) = 'new_user';
 DECLARE @sql NVARCHAR(MAX);
